@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Michroma&display=swap');
+
+
+body {
+    background: linear-gradient(90deg, #5201cb 0%, #787474 100%);
+    font-family: Michroma, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: aquamarine;
+}
+
+p {
+    color: aquamarine;
+}
+
+/* footer{
+    background: linear-gradient(270deg, #9f75de 0%, #787474 100%);
+
+} */
+
+.foot-logo img {
+    width: 65px;
+    margin-inline: 1em;
+}
+
+.nav-link {
+    color: rgb(5, 255, 172);
+}
+
+.navbar-nav .nav-link.active {
+    color: rgb(164, 164, 164);
+}
+
+.navbar-brand img {
+    width: 45px;
+}
+
+.navbar-toggler {
+    background-color: rgb(164, 164, 164);
+}
+
+/* .card-img-top{
+    width: 100%;
+    height: 2rem;
+    object-fit: cover;
+} */
+
+.card-img-top {
+    height: 18rem;
+}
+
+.card {
+    margin-bottom: 1.1rem;
+    background: linear-gradient(90deg, #5201cb 0%, #787474 100%);
+    color: aquamarine;
+}
+
+.sidebar {
+    color: aquamarine;
+    background: linear-gradient(90deg, #5201cb 0%, #787474 100%);
+    margin-bottom: 1.1rem;
+
+}
+
+/* .card a {
+    text-decoration: none;
+    color: inherit;
+} */
+
+.scrollable {
+    height: 300px;
+    /*Задаем фиксированную высоту для прокручиваемой области  */
+    overflow-y: auto;
+    /* Включаем вертикальную прокрутку */
+    border: 1px solid #ccc;
+    /* Для визуального отделения */
+    padding: 10px;
+}
+
+.slide {
+    color: aquamarine;
+    margin: auto auto;
+    padding-right: 2.5em;
+}
+
+
+
+.carousel-item img {
+    height: 18rem;
+    width: 27rem;
+    ;
+}
+
+.phone-anim {
+    animation: phone_anim 2s ease 0s infinite normal forwards;
+}
+
+@keyframes phone_anim {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(-1.2deg);
+	}
+}
+
+@media (max-width:755px) {
+    .carousel-indicators {
+        display: none;
+    }
+}
